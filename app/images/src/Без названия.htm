@@ -1,0 +1,924 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.18.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>AVIF: Meet the Next Level Image File Format | Alliance for Open Media</title>
+<meta name="description" content="                                                                                                                                                            In these images of a scarlet macaw, you can see how the AVIF format stands up. If you click to enlarge each image, you can see that the AVIF is clearly better quality than the JPEG, even though they are almost the same file size. While the PNG original looks better, it&#39;s massive and inappropriate for web use. When compared against a WEBP image of the same size, you&#39;ll notice that the AVIF has more detail in the fine feathers around the face and the top of the wing. While the differences are subtle, they are there.       ">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Alliance for Open Media">
+<meta property="og:title" content="AVIF: Meet the Next Level Image File Format">
+<meta property="og:url" content="https://aomedia.org/blog%20posts/avif-meet-the-next-level-image-file-format/">
+
+
+  <meta property="og:description" content="                                                                                                                                                            In these images of a scarlet macaw, you can see how the AVIF format stands up. If you click to enlarge each image, you can see that the AVIF is clearly better quality than the JPEG, even though they are almost the same file size. While the PNG original looks better, it&#39;s massive and inappropriate for web use. When compared against a WEBP image of the same size, you&#39;ll notice that the AVIF has more detail in the fine feathers around the face and the top of the wing. While the differences are subtle, they are there.       ">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2023-11-08T00:00:00+00:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://aomedia.org/blog%20posts/avif-meet-the-next-level-image-file-format/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://aomedia.org/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Alliance for Open Media Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/aomedia-icon-only.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          Alliance for Open Media
+          <span class="site-subtitle">An Alliance of Global Media Innovators</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/av1-features/get-started/" >Get Started</a>
+            </li><li class="masthead__menu-item">
+              <a href="/membership/" >Membership</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >News</a>
+            </li><li class="masthead__menu-item">
+              <a href="/contact/" >Contact</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://aomedia.org/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">></span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#blog-posts" itemprop="item"><span itemprop="name">Blog posts</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">></span>
+      
+    
+      
+      
+        <li class="current">AVIF: Meet the Next Level Image File Format</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name"></h3>
+    
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="AVIF: Meet the Next Level Image File Format">
+    <meta itemprop="description" content="                                                                                                                                In these images of a scarlet macaw, you can see how the AVIF format stands up. If you click to enlarge each image, you can see that the AVIF is clearly better quality than the JPEG, even though they are almost the same file size. While the PNG original looks better, it&#39;s massive and inappropriate for web use. When compared against a WEBP image of the same size, you&#39;ll notice that the AVIF has more detail in the fine feathers around the face and the top of the wing. While the differences are subtle, they are there.  ">
+    <meta itemprop="datePublished" content="2023-11-08T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">AVIF: Meet the Next Level Image File Format
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  7 minute read
+
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        
+<figure class="fourth ">
+  
+    
+      <a href="/assets/images/blog/parrot-jpg.jpg" title="Parrot JPG">
+        <img src="/assets/images/blog/parrot-jpg.jpg" alt="Parrot JPG" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/blog/parrot-png.png" title="Parrot PNG">
+        <img src="/assets/images/blog/parrot-png.png" alt="Parrot PNG" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/blog/parrot-webp.webp" title="Parrot WEBP">
+        <img src="/assets/images/blog/parrot-webp.webp" alt="Parrot WEBP" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/blog/parrot-avif.avif" title="Parrot AVIF">
+        <img src="/assets/images/blog/parrot-avif.avif" alt="Parrot AVIF" />
+      </a>
+    
+  
+  
+    <figcaption>In these images of a scarlet macaw, you can see how the AVIF format stands up. If you click to enlarge each image, you can see that the AVIF is clearly better quality than the JPEG, even though they are almost the same file size. While the PNG original looks better, it's massive and inappropriate for web use. When compared against a WEBP image of the same size, you'll notice that the AVIF has more detail in the fine feathers around the face and the top of the wing. While the differences are subtle, they are there.
+</figcaption>
+  
+</figure>
+
+<p>It’s not often that you find better quality for a lower cost. But the Alliance
+for Open Media’s AVIF format represents a much-needed improvement on the JPEG
+format developed in the 1990s. While there are other alternatives, including
+PNG, GIF, and WebP, they all have serious shortcomings that the AVIF format
+overcomes.</p>
+
+<p>The quality of AVIF images is noticeably superior to JPEG. Thanks to smaller file
+sizes AVIF images render more quickly in browsers, speeding up the experience
+of internet users, especially when they’re on mobile browsers. Smaller file sizes
+also ease the pain of monthly data caps and finite hardware storage limits on
+phones.</p>
+
+<p>The AVIF format was first released in 2019. It was designed to improve
+compression methods and deliver better quality per byte while delivering
+superior visual appeal. AVIF is also royalty-free and supports high dynamic
+range (HDR) and other modern imaging techniques (more on that below).</p>
+
+<p>Now that the new AVIF format is seeing widespread adoption and support by major
+players like Google, Apple, Mozilla, Microsoft, and Meta, it’s a sure bet that
+you’ve viewed AVIF images without even knowing it.</p>
+
+<h2 id="the-need-for-speed">The Need for Speed</h2>
+
+<p>We've all given up on sites that took too long to load. There are also dozens of
+stats that confirm that load speed can make or break the success of a website.
+One study of over 100 million page views showed that conversion rates were three
+times higher for the fastest e-commerce websites¹. In another study, 70% of
+consumers said that a website’s load time affected their willingness to buy².
+Even for sites that aren’t e-commerce related, load speed can still affect how
+much time users spend engaging with content and search engine rankings.</p>
+
+<p>Image sizes can be a big part of the load speed of a site, and they’re certainly
+the most straightforward problem for owners to fix. If a site owner converts
+their images to AVIF, file sizes can shrink to less than half that of JPEGs.</p>
+
+<p>As a tangential benefit, smaller image sizes mean less storage space is used,
+which can mean lower costs for site owners. Reduced storage space could also
+mean that one day everyone will be able to store more photos on their phones.</p>
+
+<p>AVIF has also seen heavy adoption by streaming services like Netflix.</p>
+
+<p>“We have A/B tested AVIF-SDR image assets on web browsers and have observed
+improvements in our ‘time-to-render (TTR)’ metric,” said Aditya Mavlankar,
+senior software engineer for video algorithms at Netflix.</p>
+
+<p>“TTR improvement was seen across a variety of client/network connections — and
+across browser implementations such as Chrome, Firefox, and Safari — with larger
+improvements materializing on the particularly slow connections."</p>
+
+<p>The growing success of AVIF is gratifying for Jani Huoponen, group product
+manager for immersive audio and open media Codecs at Google, and a member of
+AOMedia's Codec Working Group. “Our goal was the development of royalty-free
+technology that would empower more web platforms, browsers, and users to stream
+video and images at higher quality."</p>
+
+<h2 id="how-does-avif-compare-to-other-codecs">How Does AVIF Compare to Other Codecs?</h2>
+
+<p>Images that use AVIF stand up extremely well in terms of visual quality, file
+size, and encoding speed when compared to other formats. Specifically, AVIF
+offers a maximum color depth of 12 bits in three color space channels  and
+supports transparency. AVIF supports multiple color subsampling formats,
+including YUV 444 and YUV 420. While YUV 420 is a great fit for most images,
+YUV 444 subsampling helps avoid color bleeding with certain types of image
+content, <a href="https://netflixtechblog.com/avif-for-next-generation-image-coding-b1d75675fe4">for example</a>.
+Nevertheless, most modern AVIF encoding tools support the sharp YUV feature
+(<a href="https://www.ctrl.blog/entry/webp-sharp-yuv.html">similar to sharp YUV in WebP</a>)
+and YUV 420 sub-sampling with sharp YUV enabled mitigates most of the color bleeding.</p>
+
+<figure class="fourth ">
+  
+    
+      <a href="/assets/images/blog/bridge-jpg.jpg" title="Bridge JPG">
+        <img src="/assets/images/blog/bridge-jpg.jpg" alt="Bridge JPG" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/blog/bridge-png.png" title="Bridge PNG">
+        <img src="/assets/images/blog/bridge-png.png" alt="Bridge PNG" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/blog/bridge-webp.webp" title="Bridge WEBP">
+        <img src="/assets/images/blog/bridge-webp.webp" alt="Bridge WEBP" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/blog/bridge-avif.avif" title="Bridge AVIF">
+        <img src="/assets/images/blog/bridge-avif.avif" alt="Bridge AVIF" />
+      </a>
+    
+  
+  
+    <figcaption>In these images of a bridge, you can see how the AVIF format stands up. If you click to enlarge each image, you can see that the AVIF is clearly better quality than the JPEG, even though they are almost the same file size. While the PNG original looks better, it's massive and inappropriate for web use. When compared against a WEBP image of the same size, you'll notice that the AVIF has less pixelation around the bridge struts.
+</figcaption>
+  
+</figure>
+
+<p>Because of its age, JPEG is one of the most widely-supported formats. However,
+when compared to AVIF, JPEG images exhibit compression artifacts and image
+blocking. Users will see issues like fuzzy edges, ‘pixelation’, mosquito noise,
+and the ‘ghosts’ of colors appearing in nearby areas of the images. Color
+banding appears when the gradients in an uncompressed image are given coarse
+‘staircase’ boundaries when compressed.</p>
+
+<p>While PNGs have fine visual quality, they don’t reduce file size very much due
+to the lossless compression and therefore are less ideal for web content because
+of their large file sizes. WebPs provide great file size savings compared to JPG,
+but AVIF reduces file sizes even further.</p>
+
+<p>GIF is the format that just won’t die, even though it only allows for 8-bit color
+(for a total of 256). From its earliest adventures as animations like “Under
+Construction”, “Dancing Baby”, and “Dancing Banana”, it thrived as the memeverse
+continued to expand in the past thirty years. With any luck, AVIF will start to
+bring better visual quality to Internet humor.</p>
+
+<p>To test the compression capabilities of AVIF, members of the AOM encoded a set
+of animated GIFs to AVIF. Over the test set, animated AVIF files were an average
+of 78% smaller than the original GIF files:</p>
+
+<ul>
+  <li><a href="https://upload.wikimedia.org/wikipedia/commons/8/81/0011p8301Campanile1.gif">Campanile</a>: -86.8%</li>
+  <li><a href="https://upload.wikimedia.org/wikipedia/commons/2/26/01-Ellipsenzirkel-van_Schooten-1.gif">Ellipsis</a>: -86.3%</li>
+  <li><a href="https://upload.wikimedia.org/wikipedia/commons/c/c4/01_classical_greek_4_elements_earth.gif">Greek_elements</a>: -31.4%</li>
+  <li><a href="https://upload.wikimedia.org/wikipedia/commons/f/f0/%22%2Barya%2B%22_Gerridae_-_Anggang_kayak_-_laba-laba_air_-_Lengkongwetan_2020_1.gif">Kayak</a>: -95.2</li>
+  <li><a href="https://upload.wikimedia.org/wikipedia/commons/0/0f/%22Consider_the_lilies...%22.gif">Lilies</a>: -87.6%</li>
+  <li><a href="https://upload.wikimedia.org/wikipedia/commons/8/83/0031p0506Matthaeus1.gif">Matthaeus</a>: -89.9%</li>
+  <li><a href="https://upload.wikimedia.org/wikipedia/commons/0/02/%28-%29-menthol-3D-qutemol.anim.gif">Menthol</a>: -80.7%</li>
+  <li><a href="https://upload.wikimedia.org/wikipedia/commons/9/95/%22Minor_edit%22_option_on_Odia_Wikipedia.gif">Minor_edit</a>: -85.1%</li>
+  <li><a href="https://upload.wikimedia.org/wikipedia/commons/a/a6/%22Arya%22_topeng_monyet_%EA%A6%8F%EA%A6%BC%EA%A6%9B%EA%A6%BC%EA%A6%8F%EA%A7%80_%EA%A6%B2%EA%A6%BA%EA%A6%B4%EA%A6%92%EA%A7%80%EA%A6%AD%EA%A6%BA%EA%A6%81_%EA%A6%A0%EA%A6%BA%EA%A6%B4%EA%A6%A5%EA%A6%BA%EA%A6%81_%EA%A6%A9%EA%A6%BA%EA%A6%B4%EA%A6%9A%EA%A6%BA%EA%A6%A0%EA%A7%80_animation.gif">Monyet</a>: -92.5%</li>
+  <li>Pen: -66.0%</li>
+  <li><a href="https://upload.wikimedia.org/wikipedia/commons/f/f7/-PLASMA-ColorCycling.Gif">Plasma</a>: -98.1%</li>
+  <li><a href="https://upload.wikimedia.org/wikipedia/commons/8/83/01_self-portrait_animated_gif_rick_doble.gif">Portrait</a>: -37.4%</li>
+  <li><a href="https://upload.wikimedia.org/wikipedia/commons/4/48/%25_of_US_Car_Crash_Fatalities_Where_Driver_Blood_Alcohol_Level_Was_.01_and_Above_1999_-_2012.gif">US_map</a>: -82.0%</li>
+  <li><strong>Average: -78.4%</strong></li>
+</ul>
+
+<p>* AVIF encoder version: libaom version v3.5.0. Settings: speed 5, CQ 23
+** Test set: 15 sample GIFs from <a href="https://commons.wikimedia.org/wiki/Category:Animated_GIF_files">Wikipedia</a>.</p>
+
+<p>Another advantage of AVIFs for content creators is that they can be encoded and
+decoded very quickly, thanks to the format’s ability to leverage modern
+multi-core processors with multi-threaded encoding.</p>
+
+<h2 id="what-else-can-avif-do">What Else Can AVIF Do?</h2>
+
+<p>There are other benefits to the AVIF format. Graphics specialists will be
+thrilled to know that it supports highly complex images of all kinds.</p>
+
+<p>AVIF images can be used for both still and animated images. They also support
+high dynamic range (HDR) photos, which show the full detail in both the brightest
+areas and the darkest. Mixed media, custom metadata, and auxiliary images are
+also options for content creators.</p>
+
+<p>Artists will be especially interested in the fact that they can create very
+large images (think gigapixels) as AVIFs as well.</p>
+
+<h2 id="where-is-avif-supported">Where is AVIF Supported?</h2>
+
+<p>Critically, the AVIF format is supported by top mobile and desktop browsers like
+Google Chrome, Mozilla Firefox, Apple’s Safari and Opera — <a href="https://caniuse.com/?search=avif">you can view the full
+list with versions here</a>.</p>
+
+<p>If a site owner is using a content delivery network (CDN) to minimize latency,
+they’ll be glad to know that many of the top offerings support AVIF as well,
+including Cloudinary, Cloudflare, Akamai, Imgix, Adobe AEM Dynamic Media,
+ImageEngine and Fastly.</p>
+
+<p>There is also a growing list of WordPress plugins and image compression tools
+that support AVIF as well:</p>
+<ul>
+  <li>AutoOptimize</li>
+  <li>ShortPixel Image Optimizer</li>
+  <li>EWWW Image Optimizer</li>
+  <li>Converted for Media</li>
+  <li>Optimole</li>
+  <li>ImageMagick</li>
+  <li>FFmpeg</li>
+</ul>
+
+<p>For photographers, <a href="https://helpx.adobe.com/camera-raw/using/hdr-output.html">Adobe Camera Raw supports AVIF natively</a>.
+While graphic design tools like those in the Adobe Suite don’t support AVIFs yet,
+there is a strong push because so many browsers support the format
+(<a href="https://github.com/0xC0000054/avif-format">Windows PhotoShop users can download this plugin to use AVIFs</a>. There are less complex tools that support AVIF as well, like GIMP, an image
+editor that works on macOS, GNU/Linux, Windows, as well as Microsoft’s Paint.NET.
+These can be used to make quick images for social media, and it won’t be long
+until other simpler tools will be using the format to unlock exciting new
+effects.</p>
+
+<p>AVIF is supported in Windows 10 and Windows 11 by downloading the free
+<a href="https://apps.microsoft.com/store/detail/av1-video-extension/9MVZQVXJBQ9V">AV1 Video Extension</a>
+from the Microsoft app store. The AV1 Video Extension enables the viewing of
+AVIF still images in a variety of apps, such as:</p>
+<ul>
+  <li>File Explorer (thumbnails, file metadata, and preview of AVIF images)</li>
+  <li>Photos</li>
+  <li>Paint</li>
+  <li>Windows Media Player</li>
+  <li>Office 365 (PowerPoint, Word, etc.)</li>
+</ul>
+
+<p>AVIF decoding is supported out of the box on macOS Ventura and iOS 16. It’s also
+available for iPadOS 16 in any app that uses the system decoding APIs.</p>
+
+<h2 id="the-avif-revolution-is-growing">The AVIF Revolution is Growing</h2>
+
+<p>From the perspective of most people viewing web content, the growing adoption of
+AVIF is a silent revolution. After all, most people don’t right-click to check
+the format of every image they see.</p>
+
+<p>From the perspective of designers, videographers, website owners, and web
+platform operators, however, AVIF’s unique convergence of advantages translates
+into a format decision that gets easier to make with every passing day.</p>
+
+<p><a href="https://aomedia.org/avif/" class="btn btn--success btn--large">Get Started with AVIF</a></p>
+
+<p>References:</p>
+<ol>
+  <li>Portent: <a href="https://www.portent.com/blog/analytics/research-site-speed-hurting-everyones-revenue.htm">https://www.portent.com/blog/analytics/research-site-speed-hurting-everyones-revenue.htm</a></li>
+  <li>Search Engine Journal: <a href="https://www.searchenginejournal.com/nearly-70-of-consumers-say-page-speed-impacts-their-purchasing-decisions/290235/#close">https://www.searchenginejournal.com/nearly-70-of-consumers-say-page-speed-impacts-their-purchasing-decisions/290235/#close</a></li>
+</ol>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#blog-posts" class="page__taxonomy-item" rel="tag">Blog Posts</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-11-08T00:00:00+00:00">November 8, 2023</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=AVIF%3A+Meet+the+Next+Level+Image+File+Format%20https%3A%2F%2Faomedia.org%2Fblog%2520posts%2Favif-meet-the-next-level-image-file-format%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa-brands fa-square-x-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Faomedia.org%2Fblog%2520posts%2Favif-meet-the-next-level-image-file-format%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Faomedia.org%2Fblog%2520posts%2Favif-meet-the-next-level-image-file-format%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/press%20releases/bluedot-joins-aomedia/" class="pagination--pager" title="BLUEDOT Joins the Alliance for Open Media
+">Previous</a>
+    
+    
+      <a href="/press%20releases/AOMedia-Advances-the-Audio-Innovation-Era/" class="pagination--pager" title="AOMedia Advances the Audio Innovation Era with First-ever Audio Specification Offered Under Its Royalty-free License
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/newsletters/aom-decoder-q4-2023/" rel="permalink">AOM Decoder Q4 2023
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Check out the latest news and updates from AOMedia in the last issue of the Decoder in 2023!
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/press%20releases/AOMedia-Advances-the-Audio-Innovation-Era/" rel="permalink">AOMedia Advances the Audio Innovation Era with First-ever Audio Specification Offered Under Its Royalty-free License
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Immersive Audio Model and Formats (IAMF) Container Specification Enables
+Ecosystem-Wide Innovation in the Immersive Spatial Audio Domain
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/press%20releases/bluedot-joins-aomedia/" rel="permalink">BLUEDOT Joins the Alliance for Open Media
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">WAKEFIELD, Mass. – July 13, 2023 – The Alliance for Open Media
+(AOMedia) announced today that BLUEDOT.io,
+a leading startup specializing in semiconductor des...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/newsletters/aom-decoder-q2-2023/" rel="permalink">AOM Decoder Q2 2023
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Check out the latest news and updates from AOMedia in the second issue of the Decoder in 2023!
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
+    <label class="sr-only" for="cse-search-input-box-id">
+      Enter your search term...
+    </label>
+    <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results">
+    <gcse:searchresults-only></gcse:searchresults-only>
+  </div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.linkedin.com/company/alliance-for-open-media/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/a4omedia" rel="nofollow noopener noreferrer"><i class="fa-brands fa-square-x-twitter" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/AOMediaCodec" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> RSS</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 Alliance for Open Media &middot; All Rights Reserved &middot; Project of the <a href="http://www.jointdevelopment.org/">Joint Development Foundation</a> &middot; <a href="/terms-of-service/">Terms of Service</a></div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <!--  <script src="https://kit.fontawesome.com/4eee35f757.js"></script> --!>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<script>
+  (function () {
+    var cx = '002525345123710699578:jwp64obavqr';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+  function googleCustomSearchExecute() {
+    var input = document.getElementById('cse-search-input-box-id');
+    var element = google.search.cse.element.getElement('searchresults-only0');
+    if (input.value == '') {
+      element.clearAllResults();
+    } else {
+      element.execute(input.value);
+    }
+    return false;
+  }
+
+  
+</script>
+
+
+
+
+  <script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-170194442-1']);
+  
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#222e5c",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "#9cdbba",
+      "text": "#000000"
+    }
+  },
+  "theme": "edgeless",
+  "content": {
+    "href": "/terms-of-service/"
+  }
+});
+</script>
+
+
+  </body>
+</html>
